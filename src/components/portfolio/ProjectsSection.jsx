@@ -4,6 +4,14 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
+    title: "Instagram Clone",
+    description: "Full-featured social media platform with photo sharing, stories, real-time messaging, and user interactions.",
+    url: "https://instphum.netlify.app/",
+    image: "https://media.base44.com/images/public/69b953316c6a6f44abed30f4/instagram_clone_preview.png",
+    icon: "📷",
+    tags: ["React", "Firebase", "Social Media"],
+  },
+  {
     title: "Fraud Education System",
     description: "Full-stack fraud detection dashboard with real-time analytics, transaction monitoring, and alert management.",
     url: "https://fraudeducationsystem.netlify.app",
