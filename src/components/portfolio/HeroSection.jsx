@@ -32,18 +32,32 @@ export default function HeroSection() {
         className="absolute bottom-0 right-0 w-[700px] h-[700px] rounded-full bg-purple-600/40 blur-[120px] pointer-events-none" 
       />
 
+      {/* Intro Text */}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-center mb-8 relative z-10 max-w-4xl px-6"
+      >
+        <p className="text-xl sm:text-2xl md:text-3xl text-white/90 leading-relaxed">
+          Hi, I am <span className="text-violet-400 font-semibold">Phumeh Mjoli</span>
+          <br />
+          A <span className="bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text text-transparent font-bold">Full Stack Developer</span> and <span className="bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text text-transparent font-bold">IT Expert</span>
+        </p>
+      </motion.div>
+
       {/* Header Text */}
       <motion.div
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
         className="text-center mb-12 relative z-10"
       >
         <motion.h1 
           className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-4"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.4 }}
         >
           <span className="block bg-gradient-to-r from-violet-400 via-purple-400 to-pink-400 bg-clip-text text-transparent font-extrabold italic">
             Modern
@@ -59,7 +73,7 @@ export default function HeroSection() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
+          transition={{ delay: 0.7 }}
           className="inline-block border-2 border-white/30 px-6 py-2 mt-4"
         >
           <span className="text-white/80 text-sm tracking-widest">FOR 2026</span>
@@ -68,7 +82,7 @@ export default function HeroSection() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.7 }}
+          transition={{ delay: 0.9 }}
           className="flex items-center justify-center gap-3 mt-6 text-white/60 text-sm"
         >
           <div className="flex items-center gap-2">
