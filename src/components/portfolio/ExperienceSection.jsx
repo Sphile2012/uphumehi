@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    title: "Project Management",
+    title: "Project Management Trainee",
     company: "Umuzi",
     period: "Jun 2026 – Present",
     location: "Cape Town, South Africa",
