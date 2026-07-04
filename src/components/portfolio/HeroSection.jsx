@@ -1,16 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Monitor, Zap, Code, Settings } from "lucide-react";
+import { Monitor, Zap, Code, Settings, ArrowRight, Sparkles, Award, Briefcase } from "lucide-react";
 
 const PROFILE_PHOTO = "https://media.base44.com/images/public/user_6971b3bc769db4b08518a023/1acc20bfe_WhatsAppImage2026-03-01at190152.jpg";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden font-inter bg-[#0a0a0f] py-20">
-      {/* Dot pattern in top left */}
-      <div className="absolute top-20 left-20 grid grid-cols-6 gap-2 opacity-30">
-        {[...Array(24)].map((_, i) => (
-          <div key={i} className="w-1.5 h-1.5 rounded-full bg-violet-500" />
+    <section id="home" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden font-inter bg-gradient-to-b from-[#0a0a0f] via-[#0f0f1a] to-[#0a0a0f] py-20">
+      {/* Animated dot grid pattern */}
+      <div className="absolute top-20 left-20 grid grid-cols-8 gap-2 opacity-20">
+        {[...Array(32)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="w-1.5 h-1.5 rounded-full bg-violet-500"
+            animate={{ opacity: [0.2, 0.8, 0.2] }}
+            transition={{ duration: 3, delay: i * 0.1, repeat: Infinity }}
+          />
         ))}
       </div>
 
@@ -32,112 +37,234 @@ export default function HeroSection() {
         className="absolute bottom-0 right-0 w-[700px] h-[700px] rounded-full bg-purple-600/40 blur-[120px] pointer-events-none" 
       />
 
-      {/* Intro Text */}
+      {/* Hero Introduction */}
       <motion.div
-        initial={{ opacity: 0, y: -20 }}
+        initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-center mb-16 relative z-10 max-w-4xl px-6"
+        transition={{ duration: 0.8 }}
+        className="text-center mb-16 relative z-10 max-w-5xl px-6"
       >
-        <p className="text-2xl sm:text-3xl md:text-4xl text-white/90 leading-relaxed font-light">
-          Hi, I am <span className="text-violet-400 font-semibold">Phumeh Mjoli</span>
-          <br />
-          A <span className="bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text text-transparent font-bold">Full Stack Developer</span> and <span className="bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text text-transparent font-bold">IT Expert</span>
-        </p>
+        {/* Badge */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.2 }}
+          className="inline-flex items-center gap-2 bg-violet-500/10 border border-violet-500/30 rounded-full px-5 py-2 mb-8"
+        >
+          <Sparkles className="w-4 h-4 text-violet-400" />
+          <span className="text-violet-300 text-sm font-medium">Available for Hire</span>
+        </motion.div>
+
+        {/* Main Heading */}
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6"
+        >
+          <span className="text-white/90">Hi, I'm </span>
+          <span className="bg-gradient-to-r from-violet-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+            Phunyezwa Mjoli
+          </span>
+        </motion.h1>
+
+        {/* Subtitle */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+          className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6"
+        >
+          <span className="text-white">Full-Stack Developer</span>
+          <span className="text-violet-400"> & </span>
+          <span className="text-white">IT Expert</span>
+        </motion.div>
+
+        {/* Description */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.7 }}
+          className="text-lg sm:text-xl text-white/60 leading-relaxed max-w-3xl mx-auto mb-10"
+        >
+          Transforming ideas into powerful digital solutions. Specialized in building scalable web applications with modern technologies, clean code, and exceptional user experiences.
+        </motion.p>
+
+        {/* CTA Buttons */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.9 }}
+          className="flex flex-wrap items-center justify-center gap-4"
+        >
+          <a
+            href="#projects"
+            className="group px-8 py-4 bg-gradient-to-r from-violet-600 to-purple-600 text-white font-semibold rounded-xl hover:from-violet-700 hover:to-purple-700 transition-all duration-300 shadow-lg shadow-violet-600/50 hover:shadow-violet-600/70 hover:scale-105 flex items-center gap-2"
+          >
+            View My Work
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </a>
+          <a
+            href="#contact"
+            className="px-8 py-4 border-2 border-white/20 text-white font-semibold rounded-xl hover:border-violet-500/50 hover:bg-violet-500/10 transition-all duration-300 backdrop-blur-sm"
+          >
+            Get In Touch
+          </a>
+        </motion.div>
+
+        {/* Quick Stats */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.1 }}
+          className="flex flex-wrap items-center justify-center gap-8 mt-12"
+        >
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-violet-500/20 to-purple-500/20 border border-violet-500/30 flex items-center justify-center">
+              <Code className="w-6 h-6 text-violet-400" />
+            </div>
+            <div className="text-left">
+              <div className="text-2xl font-bold text-white">8+</div>
+              <div className="text-sm text-white/50">Projects</div>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-violet-500/20 to-purple-500/20 border border-violet-500/30 flex items-center justify-center">
+              <Award className="w-6 h-6 text-violet-400" />
+            </div>
+            <div className="text-left">
+              <div className="text-2xl font-bold text-white">BSc</div>
+              <div className="text-sm text-white/50">Degree</div>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-violet-500/20 to-purple-500/20 border border-violet-500/30 flex items-center justify-center">
+              <Briefcase className="w-6 h-6 text-violet-400" />
+            </div>
+            <div className="text-left">
+              <div className="text-2xl font-bold text-white">100%</div>
+              <div className="text-sm text-white/50">Dedicated</div>
+            </div>
+          </div>
+        </motion.div>
       </motion.div>
 
-      {/* Laptop Mockup with Portfolio Inside */}
+      {/* Laptop Mockup with Portfolio Preview */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.3 }}
-        className="relative z-10 w-full max-w-5xl px-6"
+        transition={{ duration: 1, delay: 0.5 }}
+        className="relative z-10 w-full max-w-6xl px-6 mb-20"
       >
         {/* Laptop Frame */}
         <div className="relative">
           {/* Screen */}
-          <div className="relative bg-gradient-to-b from-gray-900 to-black rounded-t-2xl border-4 border-gray-800 shadow-2xl overflow-hidden">
-            {/* Screen Content - Mini Portfolio */}
-            <div className="aspect-[16/10] bg-gradient-to-br from-[#0d0d1a] via-[#141428] to-[#0d0d1a] p-8 relative overflow-hidden">
-              {/* Purple glow inside laptop screen */}
-              <div className="absolute top-0 right-0 w-96 h-96 bg-violet-600/30 rounded-full blur-[100px]" />
+          <div className="relative bg-gradient-to-b from-gray-900 to-black rounded-t-3xl border-8 border-gray-800 shadow-2xl overflow-hidden">
+            {/* Screen Content - Portfolio Preview */}
+            <div className="aspect-[16/10] bg-gradient-to-br from-[#0d0d1a] via-[#1a1a2e] to-[#0d0d1a] p-8 sm:p-12 relative overflow-hidden">
+              {/* Purple glow inside screen */}
+              <motion.div 
+                animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.5, 0.3] }}
+                transition={{ repeat: Infinity, duration: 8 }}
+                className="absolute top-0 right-0 w-[500px] h-[500px] bg-violet-600/30 rounded-full blur-[100px]" 
+              />
               
               {/* Navigation */}
-              <div className="flex items-center justify-between mb-8 relative z-10">
-                <div className="text-white/80 text-xs font-semibold tracking-wider">PHUNYEZWA</div>
-                <div className="flex gap-6 text-white/60 text-xs">
-                  <span>HOME</span>
-                  <span>ABOUT</span>
-                  <span>WORK</span>
-                  <span>EXPERIENCE</span>
-                  <span>CONTACT</span>
+              <div className="flex items-center justify-between mb-12 relative z-10">
+                <div className="text-white font-bold text-lg tracking-wider">PHUNYEZWA</div>
+                <div className="hidden md:flex gap-8 text-white/60 text-sm font-medium">
+                  <a href="#home" className="hover:text-violet-400 transition-colors">Home</a>
+                  <a href="#about" className="hover:text-violet-400 transition-colors">About</a>
+                  <a href="#skills" className="hover:text-violet-400 transition-colors">Skills</a>
+                  <a href="#projects" className="hover:text-violet-400 transition-colors">Projects</a>
+                  <a href="#contact" className="hover:text-violet-400 transition-colors">Contact</a>
                 </div>
               </div>
 
-              <div className="flex items-center gap-12 relative z-10">
-                {/* Left Side - Text */}
-                <div className="flex-1">
-                  <div className="text-violet-400 text-xs mb-3 uppercase tracking-wider">Hello, I'm</div>
-                  <h2 className="text-4xl font-bold text-white mb-2 leading-tight">
+              <div className="flex flex-col lg:flex-row items-center gap-8 relative z-10">
+                {/* Left Side - Text Content */}
+                <div className="flex-1 text-center lg:text-left">
+                  <div className="text-violet-400 text-xs sm:text-sm mb-4 uppercase tracking-wider font-medium">
+                    Welcome to my portfolio
+                  </div>
+                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-4 leading-tight">
                     Phunyezwa
                     <br />
-                    Mjoli.
+                    <span className="text-white/90">Mjoli</span>
                   </h2>
-                  <p className="text-white/50 text-sm mb-6 leading-relaxed">
-                    I design and build modern websites
-                    <br />
-                    that help brands grow.
+                  <p className="text-white/60 text-sm sm:text-base mb-8 leading-relaxed max-w-md">
+                    Creating innovative digital experiences through clean code, modern design, and cutting-edge technology.
                   </p>
-                  <div className="flex gap-3">
-                    <button className="px-6 py-2 bg-gradient-to-r from-violet-600 to-purple-600 text-white text-xs rounded-lg font-semibold">
-                      Hire Me
+                  <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+                    <button className="px-6 py-3 bg-gradient-to-r from-violet-600 to-purple-600 text-white text-sm font-semibold rounded-lg hover:scale-105 transition-transform">
+                      View Projects
                     </button>
-                    <button className="px-6 py-2 border border-white/20 text-white text-xs rounded-lg">
-                      Let's Talk
+                    <button className="px-6 py-3 border border-white/20 text-white text-sm font-medium rounded-lg hover:bg-white/5 transition-all">
+                      Contact Me
                     </button>
                   </div>
 
-                  {/* Featured Work Label */}
-                  <div className="mt-12">
-                    <div className="text-white/40 text-xs uppercase tracking-wider mb-4">✦ Featured Work</div>
-                    <div className="grid grid-cols-3 gap-3">
-                      <div className="bg-gradient-to-br from-violet-600/20 to-purple-600/20 backdrop-blur border border-violet-500/20 rounded-lg p-3 aspect-[4/3] flex flex-col justify-between">
-                        <div className="text-[8px] text-violet-400">Digital Agency</div>
-                        <div className="h-1 w-full bg-gradient-to-r from-violet-500 to-purple-500 rounded" />
-                      </div>
-                      <div className="bg-white/5 backdrop-blur border border-white/10 rounded-lg p-3 aspect-[4/3] flex items-center justify-center">
-                        <div className="text-xs text-white/60 font-bold">NATURE</div>
-                      </div>
-                      <div className="bg-gradient-to-br from-blue-600/10 to-cyan-600/10 backdrop-blur border border-blue-500/20 rounded-lg p-3 aspect-[4/3]" />
+                  {/* Tech Stack Preview */}
+                  <div className="mt-8 hidden lg:block">
+                    <div className="text-white/40 text-xs uppercase tracking-wider mb-3">Tech Stack</div>
+                    <div className="flex flex-wrap gap-2">
+                      {['React', 'Node.js', 'Firebase', 'Tailwind', 'TypeScript'].map((tech) => (
+                        <span key={tech} className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs text-white/70">
+                          {tech}
+                        </span>
+                      ))}
                     </div>
                   </div>
                 </div>
 
-                {/* Right Side - Silhouette Photo with MASSIVE Purple Glow */}
-                <div className="relative w-80 h-80 flex-shrink-0">
-                  {/* MASSIVE Purple Glow */}
-                  <motion.div
-                    animate={{ 
-                      scale: [1, 1.2, 1],
-                      opacity: [0.6, 0.9, 0.6]
-                    }}
-                    transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-                    className="absolute inset-0 bg-gradient-to-br from-violet-500 via-purple-600 to-violet-500 rounded-full blur-[60px] scale-125"
-                  />
-                  
-                  {/* Silhouette Photo */}
-                  <div className="relative w-full h-full rounded-full overflow-hidden">
-                    <img
-                      src={PROFILE_PHOTO}
-                      alt="Profile"
-                      className="w-full h-full object-cover"
-                      style={{
-                        filter: 'brightness(0.2) contrast(1.4) saturate(0)',
+                {/* Right Side - BRIGHT Visible Photo with Glow */}
+                <div className="relative flex-shrink-0">
+                  <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+                    {/* MASSIVE Purple Glow Behind Photo */}
+                    <motion.div
+                      animate={{ 
+                        scale: [1, 1.15, 1],
+                        opacity: [0.6, 0.9, 0.6]
+                      }}
+                      transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+                      className="absolute inset-0 bg-gradient-to-br from-violet-500 via-purple-600 to-pink-500 rounded-full blur-[80px] scale-125"
+                    />
+                    
+                    {/* Photo - BRIGHT and VISIBLE */}
+                    <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-violet-500/30 shadow-2xl shadow-violet-600/50">
+                      <img
+                        src={PROFILE_PHOTO}
+                        alt="Phunyezwa Mjoli"
+                        className="w-full h-full object-cover"
+                        style={{
+                          filter: 'brightness(1.1) contrast(1.1) saturate(1.2)',
+                        }}
+                      />
+                      {/* Subtle gradient overlay for aesthetics */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-purple-600/10" />
+                    </div>
+
+                    {/* Animated Ring */}
+                    <motion.div
+                      animate={{ rotate: 360 }}
+                      transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
+                      className="absolute inset-0 rounded-full"
+                      style={{ 
+                        background: "conic-gradient(from 0deg, transparent 0%, rgba(139,92,246,0.5) 10%, transparent 20%, transparent 80%, rgba(139,92,246,0.5) 90%, transparent 100%)",
                       }}
                     />
-                    {/* Purple overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-violet-600/50 via-purple-600/40 to-transparent mix-blend-hard-light" />
-                    <div className="absolute inset-0 bg-black/30" />
+
+                    {/* Pulsing Border */}
+                    <motion.div
+                      animate={{ 
+                        scale: [1, 1.05, 1],
+                        opacity: [0.5, 1, 0.5]
+                      }}
+                      transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+                      className="absolute inset-0 rounded-full border-2 border-violet-400/50"
+                    />
                   </div>
                 </div>
               </div>
@@ -145,13 +272,13 @@ export default function HeroSection() {
           </div>
 
           {/* Laptop Base */}
-          <div className="relative h-6 bg-gradient-to-b from-gray-700 to-gray-800 rounded-b-2xl">
-            <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-b from-transparent to-black/50 rounded-b-2xl" />
+          <div className="relative h-8 bg-gradient-to-b from-gray-700 to-gray-900 rounded-b-3xl shadow-2xl">
+            <div className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-b from-transparent to-black/50 rounded-b-3xl" />
           </div>
 
-          {/* Laptop Bottom/Stand */}
+          {/* Laptop Stand */}
           <div className="relative">
-            <div className="mx-auto w-[60%] h-3 bg-gradient-to-b from-gray-800 to-gray-900 rounded-b-lg shadow-2xl" />
+            <div className="mx-auto w-[60%] h-4 bg-gradient-to-b from-gray-800 to-gray-950 rounded-b-xl shadow-2xl" />
             {/* Purple glow under laptop */}
             <motion.div
               animate={{ 
@@ -159,97 +286,41 @@ export default function HeroSection() {
                 scaleX: [0.8, 1, 0.8]
               }}
               transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-              className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-violet-600/40 via-purple-600/30 to-transparent blur-2xl"
+              className="absolute inset-x-0 -bottom-4 h-32 bg-gradient-to-t from-violet-600/50 via-purple-600/30 to-transparent blur-3xl"
             />
           </div>
         </div>
-
-        {/* Arrow pointing to laptop */}
-        <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 1.5, duration: 0.8 }}
-          className="absolute top-1/4 -right-20 hidden xl:block"
-        >
-          <svg width="100" height="100" viewBox="0 0 100 100" className="text-violet-400">
-            <path 
-              d="M 10 30 Q 50 10, 70 50 L 60 45 M 70 50 L 65 60" 
-              stroke="currentColor" 
-              strokeWidth="2" 
-              fill="none"
-              strokeLinecap="round"
-            />
-          </svg>
-        </motion.div>
       </motion.div>
 
-      {/* Bottom Feature Badges */}
+      {/* Feature Badges */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1, duration: 0.8 }}
-        className="flex flex-wrap items-center justify-center gap-6 mt-16 relative z-10"
+        transition={{ delay: 1.2, duration: 0.8 }}
+        className="flex flex-wrap items-center justify-center gap-4 px-6 relative z-10"
       >
-        <div className="flex items-center gap-3 bg-gradient-to-r from-white/5 to-white/10 backdrop-blur-xl border border-white/10 rounded-2xl px-6 py-4">
-          <Monitor className="w-6 h-6 text-violet-400" />
-          <div>
-            <div className="text-white text-sm font-semibold">MODERN</div>
-            <div className="text-white/50 text-xs">Design</div>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-3 bg-gradient-to-r from-white/5 to-white/10 backdrop-blur-xl border border-white/10 rounded-2xl px-6 py-4">
-          <Monitor className="w-6 h-6 text-violet-400" />
-          <div>
-            <div className="text-white text-sm font-semibold">FULLY RESPONSIVE</div>
-            <div className="text-white/50 text-xs">All Devices</div>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-3 bg-gradient-to-r from-white/5 to-white/10 backdrop-blur-xl border border-white/10 rounded-2xl px-6 py-4">
-          <Zap className="w-6 h-6 text-violet-400" />
-          <div>
-            <div className="text-white text-sm font-semibold">FAST & OPTIMIZED</div>
-            <div className="text-white/50 text-xs">Performance</div>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-3 bg-gradient-to-r from-white/5 to-white/10 backdrop-blur-xl border border-white/10 rounded-2xl px-6 py-4">
-          <Code className="w-6 h-6 text-violet-400" />
-          <div>
-            <div className="text-white text-sm font-semibold">CLEAN CODE</div>
-            <div className="text-white/50 text-xs">Best Practices</div>
-          </div>
-        </div>
-      </motion.div>
-
-      {/* Bottom CTA */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
-        className="mt-12 text-center relative z-10"
-      >
-        <div className="inline-block bg-gradient-to-r from-violet-600 to-purple-600 px-8 py-1 rounded-full">
-          <span className="text-white text-sm font-semibold">✨ AI MODIFIED - SAVE THIS PIN FOR LATER!</span>
-        </div>
-      </motion.div>
-
-      {/* Floating Action Buttons (bottom right) */}
-      <motion.div
-        initial={{ opacity: 0, x: 20 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 1.8 }}
-        className="fixed bottom-8 right-8 flex flex-col gap-3 z-20"
-      >
-        <button className="w-14 h-14 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl flex items-center justify-center text-white hover:bg-white/20 transition-all">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12" />
-          </svg>
-        </button>
-        <button className="w-14 h-14 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl flex items-center justify-center text-white hover:bg-white/20 transition-all">
-          <Settings className="w-6 h-6" />
-        </button>
+        {[
+          { icon: Monitor, title: "Responsive Design", desc: "Mobile-First Approach" },
+          { icon: Zap, title: "Fast Performance", desc: "Optimized Code" },
+          { icon: Code, title: "Clean Code", desc: "Best Practices" },
+          { icon: Settings, title: "Modern Stack", desc: "Latest Tech" },
+        ].map((item, i) => (
+          <motion.div
+            key={item.title}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.4 + i * 0.1 }}
+            className="flex items-center gap-3 bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-xl border border-white/10 rounded-2xl px-5 py-4 hover:border-violet-500/30 hover:bg-white/10 transition-all"
+          >
+            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-violet-500/20 to-purple-600/20 flex items-center justify-center border border-violet-500/30">
+              <item.icon className="w-5 h-5 text-violet-400" />
+            </div>
+            <div>
+              <div className="text-white text-sm font-semibold">{item.title}</div>
+              <div className="text-white/50 text-xs">{item.desc}</div>
+            </div>
+          </motion.div>
+        ))}
       </motion.div>
     </section>
   );
