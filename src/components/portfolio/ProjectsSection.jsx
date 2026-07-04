@@ -7,7 +7,7 @@ const projects = [
     title: "Instagram Clone",
     description: "Full-featured social media platform with photo sharing, stories, real-time messaging, and user interactions.",
     url: "https://instphum.netlify.app/",
-    image: "https://media.base44.com/images/public/69b953316c6a6f44abed30f4/instagram_clone_preview.png",
+    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&auto=format&fit=crop&q=60",
     icon: "📷",
     tags: ["React", "Firebase", "Social Media"],
   },
