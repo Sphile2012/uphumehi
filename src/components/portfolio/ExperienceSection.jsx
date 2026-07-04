@@ -6,7 +6,7 @@ const experiences = [
     title: "Project Management Trainee",
     company: "Umuzi",
     period: "Jun 2026 – Present",
-    location: "Cape Town, South Africa",
+    location: "Remote",
     gradient: "from-violet-500 to-purple-600",
     highlights: [
       "Managing software development projects from conception to deployment",
