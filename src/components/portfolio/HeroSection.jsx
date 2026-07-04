@@ -99,13 +99,13 @@ export default function HeroSection() {
           transition={{ repeat: Infinity, duration: 7, ease: "easeInOut" }}
           className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-5 shadow-2xl w-56"
         >
-          <div className="text-white/40 text-xs mb-2">const skills = {</div>
+          <div className="text-white/40 text-xs mb-2">const skills = {"{"}</div>
           <div className="pl-4 space-y-1">
             <div className="text-violet-400 text-xs">frontend: <span className="text-white/60">"Expert"</span>,</div>
             <div className="text-violet-400 text-xs">backend: <span className="text-white/60">"Advanced"</span>,</div>
             <div className="text-violet-400 text-xs">design: <span className="text-white/60">"Creative"</span></div>
           </div>
-          <div className="text-white/40 text-xs">}</div>
+          <div className="text-white/40 text-xs">{"}"}</div>
         </motion.div>
       </motion.div>
 
