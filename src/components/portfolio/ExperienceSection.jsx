@@ -3,11 +3,25 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
+    title: "Project Management",
+    company: "Umuzi",
+    period: "Jun 2026 – Present",
+    location: "Cape Town, South Africa",
+    gradient: "from-violet-500 to-purple-600",
+    highlights: [
+      "Managing software development projects from conception to deployment",
+      "Coordinating cross-functional teams and stakeholder communication",
+      "Implementing agile methodologies and sprint planning",
+      "Tracking project milestones, deliverables, and resource allocation",
+      "Facilitating daily stand-ups, retrospectives, and team collaboration",
+    ],
+  },
+  {
     title: "Software Development Training",
     company: "Zaio Coding School",
     period: "Jan 2025 – Feb 2026",
     location: "Cape Town",
-    gradient: "from-violet-500 to-purple-600",
+    gradient: "from-cyan-500 to-blue-600",
     highlights: [
       "Built responsive web apps using HTML5, CSS3, JavaScript, and React",
       "Developed full-stack projects with Firebase Authentication & Firestore",
