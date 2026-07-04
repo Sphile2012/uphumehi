@@ -8,24 +8,24 @@
   :root {
     --font-inter: 'Inter', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
-    --background: 252 30% 8%;
+    --background: 240 20% 4%;
     --foreground: 0 0% 98%;
-    --card: 252 20% 12%;
+    --card: 240 15% 8%;
     --card-foreground: 0 0% 98%;
-    --popover: 252 20% 12%;
+    --popover: 240 15% 8%;
     --popover-foreground: 0 0% 98%;
     --primary: 262 80% 70%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 252 20% 16%;
+    --secondary: 240 15% 12%;
     --secondary-foreground: 0 0% 90%;
-    --muted: 252 20% 16%;
-    --muted-foreground: 252 15% 60%;
-    --accent: 200 100% 60%;
+    --muted: 240 15% 12%;
+    --muted-foreground: 240 10% 60%;
+    --accent: 262 80% 70%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-    --border: 252 20% 20%;
-    --input: 252 20% 20%;
+    --border: 240 15% 15%;
+    --input: 240 15% 15%;
     --ring: 262 80% 70%;
     --radius: 1rem;
   }

@@ -15,7 +15,7 @@ const stats = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-24 px-6 font-inter relative overflow-hidden">
+    <section id="about" className="py-24 px-6 font-inter relative overflow-hidden bg-[#0a0a0f]">
       <div className="absolute inset-0 bg-mesh opacity-30 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">

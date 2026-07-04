@@ -16,7 +16,7 @@ const socials = [
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-24 px-6 font-inter relative overflow-hidden">
+    <section id="contact" className="py-24 px-6 font-inter relative overflow-hidden bg-[#0a0a0f]">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-violet-600/15 rounded-full blur-3xl" />
       </div>

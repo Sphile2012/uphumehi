@@ -68,7 +68,7 @@ const experiences = [
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-24 px-6 font-inter relative overflow-hidden">
+    <section id="experience" className="py-24 px-6 font-inter relative overflow-hidden bg-[#0a0a0f]">
       <div className="absolute inset-0 bg-mesh opacity-20 pointer-events-none" />
 
       <div className="max-w-5xl mx-auto relative z-10">
