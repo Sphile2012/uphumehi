@@ -170,20 +170,8 @@ export default function HeroSection() {
                 transition={{ repeat: Infinity, duration: 8 }}
                 className="absolute top-0 right-0 w-[500px] h-[500px] bg-violet-600/30 rounded-full blur-[100px]" 
               />
-              
-              {/* Navigation */}
-              <div className="flex items-center justify-between mb-12 relative z-10">
-                <div className="text-white font-bold text-lg tracking-wider">PHUNYEZWA</div>
-                <div className="hidden md:flex gap-8 text-white/60 text-sm font-medium">
-                  <a href="#home" className="hover:text-violet-400 transition-colors">Home</a>
-                  <a href="#about" className="hover:text-violet-400 transition-colors">About</a>
-                  <a href="#skills" className="hover:text-violet-400 transition-colors">Skills</a>
-                  <a href="#projects" className="hover:text-violet-400 transition-colors">Projects</a>
-                  <a href="#contact" className="hover:text-violet-400 transition-colors">Contact</a>
-                </div>
-              </div>
 
-              <div className="flex flex-col lg:flex-row items-center gap-8 relative z-10">
+              <div className="flex flex-col lg:flex-row items-center gap-8 relative z-10 h-full justify-center">
                 {/* Left Side - Text Content */}
                 <div className="flex-1 text-center lg:text-left">
                   <div className="text-violet-400 text-xs sm:text-sm mb-4 uppercase tracking-wider font-medium">
