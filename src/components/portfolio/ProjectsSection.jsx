@@ -4,6 +4,14 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
+    title: "Salon Booking System",
+    description: "Modern salon management platform with online booking, appointment scheduling, and service management.",
+    url: "https://phumeh-interview.netlify.app/",
+    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&auto=format&fit=crop&q=60",
+    icon: "💇",
+    tags: ["React", "Booking System", "UI/UX"],
+  },
+  {
     title: "Instagram Clone",
     description: "Full-featured social media platform with photo sharing, stories, real-time messaging, and user interactions.",
     url: "https://instphum.netlify.app/",
