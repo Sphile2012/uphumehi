@@ -1,39 +1,84 @@
-**Welcome to your Base44 project** 
+# Phunyezwa Mjoli - Portfolio
 
-**About**
+A modern, responsive portfolio website showcasing my projects and skills as a Full-Stack Developer.
 
-View and Edit  your app on [Base44.com](http://Base44.com) 
+## About
 
-This project contains everything you need to run your app locally.
+This portfolio features:
+- Clean, modern design with smooth animations
+- Responsive layout optimized for all devices
+- Project showcase with live demos
+- Contact form and social links
 
-**Edit the code in your local development environment**
+## Tech Stack
 
-Any change pushed to the repo will also be reflected in the Base44 Builder.
+- React 18
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Lucide Icons
 
-**Prerequisites:** 
+## Getting Started
 
-1. Clone the repository using the project's Git URL 
-2. Navigate to the project directory
-3. Install dependencies: `npm install`
-4. Create an `.env.local` file and set the right environment variables
+### Prerequisites
 
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/Sphile2012/uphumehi.git
+cd uphumehi
 ```
-VITE_BASE44_APP_ID=your_app_id
-VITE_BASE44_APP_BASE_URL=your_backend_url
 
-e.g.
-VITE_BASE44_APP_ID=cbef744a8545c389ef439ea6
-VITE_BASE44_APP_BASE_URL=https://my-to-do-list-81bfaad7.base44.app
+2. Install dependencies
+```bash
+npm install
 ```
 
-Run the app: `npm run dev`
+### Development
 
-**Publish your changes**
+```bash
+npm run dev
+```
 
-Open [Base44.com](http://Base44.com) and click on Publish.
+### Build
 
-**Docs & Support**
+```bash
+npm run build
+```
 
-Documentation: [https://docs.base44.com/Integrations/Using-GitHub](https://docs.base44.com/Integrations/Using-GitHub)
+### Preview Production Build
 
-Support: [https://app.base44.com/support](https://app.base44.com/support)
+```bash
+npm run preview
+```
+
+## Deployment
+
+This portfolio is deployed on Netlify and automatically updates when changes are pushed to the main branch.
+
+## Projects Featured
+
+- Salon Booking System
+- Instagram Clone
+- Fraud Detection Dashboard
+- Netflix Clone
+- Tesla Landing Page
+- YouTube Clone
+- Amazon Clone
+- Twitter Clone
+- Google Keep Notes
+- Airbnb Clone
+
+## Contact
+
+- GitHub: [@Sphile2012](https://github.com/Sphile2012)
+- LinkedIn: [Phunyezwa Mjoli](https://linkedin.com/in/phunyezwa-mjoli)
+- Email: poomeigh503@gmail.com
+
+---
+
+Built with ❤️ by Phunyezwa Mjoli
