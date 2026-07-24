@@ -4,7 +4,8 @@ import { GraduationCap, Award, Briefcase, MapPin } from "lucide-react";
 
 const stats = [
   { icon: GraduationCap, label: "Current Study", value: "BSc Applied Mathematics & Computer Science", sub: "University of South Africa (UNISA) • 2024-2026 (Final Semester)", color: "from-violet-500 to-purple-600" },
-  { icon: Award, label: "Certificate", value: "Software Development Certification", sub: "Zaio Coding Institute • 2025-2026", color: "from-cyan-500 to-blue-600" },
+  { icon: Award, label: "Software Dev", value: "Software Development Certification", sub: "Zaio Coding Institute • 2025-2026", color: "from-cyan-500 to-blue-600" },
+  { icon: Award, label: "GenAI Course", value: "GenAI Course for Software Engineers", sub: "WeThinkCode_ • 2026", color: "from-indigo-500 to-purple-600" },
   { icon: GraduationCap, label: "Completed", value: "Higher Certificate Mathematical Sciences", sub: "UNISA • NQF Level 5 • 2022", color: "from-purple-500 to-pink-600" },
   { icon: Award, label: "Certifications", value: "IT Support & Computer Hardware", sub: "Accenture, Cisco, Alison, Worth Wealthy Me", color: "from-blue-500 to-indigo-600" },
   { icon: Briefcase, label: "Current Role", value: "Project Management Learnership", sub: "Umuzi • Jun 2026 - Present", color: "from-emerald-500 to-teal-600" },
