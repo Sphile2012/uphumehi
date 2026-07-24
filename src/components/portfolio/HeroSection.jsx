@@ -5,9 +5,14 @@ import { Code, Laptop, ArrowRight } from "lucide-react";
 export default function HeroSection() {
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden font-inter bg-[#0a0d1a]">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0a0d1a] via-[#0f1729] to-[#0a0d1a]">
-        <div className="absolute inset-0 bg-mesh opacity-10" />
+      {/* Background image with overlay */}
+      <div className="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1920&h=1080&fit=crop&q=80"
+          alt="Workspace"
+          className="w-full h-full object-cover opacity-50"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0d1a]/95 via-[#0a0d1a]/80 to-[#0a0d1a]/60" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
@@ -119,62 +124,45 @@ export default function HeroSection() {
           </motion.div>
         </motion.div>
 
-        {/* Right Side - Profile Photo */}
+        {/* Right Side - Workspace Visual */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
           className="relative hidden lg:block"
         >
+          {/* Decorative Elements */}
           <div className="relative">
-            {/* Glowing background effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-3xl" />
-            
-            {/* Profile Photo Container */}
+            {/* Code snippet overlay */}
             <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-              className="relative"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.5 }}
+              className="absolute -right-10 top-20 bg-[#1e1e1e]/90 backdrop-blur-xl border border-blue-500/30 rounded-xl p-6 shadow-2xl"
             >
-              <div className="relative w-[400px] h-[400px] mx-auto">
-                {/* Decorative rings */}
-                <div className="absolute inset-0 rounded-full border-2 border-blue-500/30 animate-pulse" />
-                <div className="absolute inset-4 rounded-full border-2 border-purple-500/20" />
-                
-                {/* Photo */}
-                <img
-                  src="/profile-photo.jpg"
-                  alt="Phunyezwa Mjoli"
-                  className="relative w-full h-full object-cover rounded-full border-4 border-blue-500/50 shadow-2xl shadow-blue-500/30"
-                />
-                
-                {/* Floating badge */}
-                <motion.div
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 1.5 }}
-                  className="absolute -bottom-4 -right-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-full shadow-xl font-semibold"
-                >
-                  Available for Work 🚀
-                </motion.div>
+              <div className="space-y-2 font-mono text-sm">
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="w-3 h-3 rounded-full bg-red-500" />
+                  <div className="w-3 h-3 rounded-full bg-yellow-500" />
+                  <div className="w-3 h-3 rounded-full bg-green-500" />
+                </div>
+                <div className="text-blue-400">✓ Plan</div>
+                <div className="text-green-400">✓ Code</div>
+                <div className="text-yellow-400">✓ Test</div>
+                <div className="text-purple-400">✓ Launch</div>
+                <div className="text-white/60 flex items-center gap-2 mt-3">
+                  <span>💙</span>
+                </div>
               </div>
             </motion.div>
 
             {/* Floating code tags */}
             <motion.div
-              animate={{ y: [0, -15, 0], rotate: [0, 5, 0] }}
-              transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
-              className="absolute -left-10 top-20 text-blue-500/20 text-7xl font-bold"
+              animate={{ y: [0, -10, 0] }}
+              transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+              className="absolute left-10 bottom-10 text-blue-500/30 text-9xl font-bold"
             >
               {"</>"}
-            </motion.div>
-
-            <motion.div
-              animate={{ y: [0, 15, 0], rotate: [0, -5, 0] }}
-              transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
-              className="absolute -right-10 bottom-20 text-purple-500/20 text-7xl font-bold"
-            >
-              {"{ }"}
             </motion.div>
           </div>
         </motion.div>
