@@ -46,7 +46,7 @@ export default function HeroSection() {
             </h1>
           </motion.div>
 
-          {/* Software Engineer Badge */}
+          {/* Professional Badge */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -54,7 +54,7 @@ export default function HeroSection() {
             className="inline-flex items-center gap-3 px-6 py-3 bg-white/5 backdrop-blur-md border border-white/10 rounded-full"
           >
             <Code className="w-5 h-5 text-blue-400" />
-            <span className="text-white text-lg font-medium">Full-Stack Developer</span>
+            <span className="text-white text-lg font-medium">Software Developer | IT Support | Project Management</span>
             <Laptop className="w-5 h-5 text-blue-400" />
           </motion.div>
 

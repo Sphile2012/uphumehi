@@ -3,14 +3,13 @@ import { motion } from "framer-motion";
 import { GraduationCap, Award, Briefcase, MapPin } from "lucide-react";
 
 const stats = [
-  { icon: GraduationCap, label: "Degree", value: "BSc Applied Mathematics & Computer Science", sub: "University of South Africa (UNISA)", color: "from-violet-500 to-purple-600" },
-  { icon: GraduationCap, label: "Certificate", value: "NQF Level 5 Mathematics & Statistics", sub: "University of South Africa (UNISA)", color: "from-violet-500 to-purple-600" },
-  { icon: Award, label: "Certificate", value: "Software Development", sub: "Zaio Coding School · Alison", color: "from-cyan-500 to-blue-600" },
-  { icon: Award, label: "Certificate", value: "Generative AI", sub: "WeThinkCode", color: "from-pink-500 to-rose-600" },
-  { icon: Award, label: "Certificate", value: "Computer Hardware Basics", sub: "Cisco Networking Academy", color: "from-blue-500 to-indigo-600" },
-  { icon: Award, label: "Certificate", value: "IT Support", sub: "Alison", color: "from-orange-500 to-amber-600" },
-  { icon: Award, label: "Certificate", value: "IT Infrastructure", sub: "Alison", color: "from-yellow-500 to-orange-600" },
-  { icon: MapPin, label: "Location", value: "South Africa", sub: "Open to all work arrangements", color: "from-emerald-500 to-teal-600" },
+  { icon: GraduationCap, label: "Education", value: "BSc Applied Mathematics & Computer Science", sub: "University of South Africa (UNISA) • 2024-2026 (Final Semester)", color: "from-violet-500 to-purple-600" },
+  { icon: GraduationCap, label: "Certificate", value: "Higher Certificate in Mathematical Sciences", sub: "UNISA • NQF Level 5 • 2022", color: "from-violet-500 to-purple-600" },
+  { icon: Award, label: "Certificate", value: "Software Development", sub: "Zaio Coding Institute • 2025-2026", color: "from-cyan-500 to-blue-600" },
+  { icon: Award, label: "Courses", value: "IT Support & Computer Hardware", sub: "Cisco, Alison & Worth Wealthy Me", color: "from-pink-500 to-rose-600" },
+  { icon: Briefcase, label: "Current Role", value: "Project Management Learnership", sub: "Umuzi • Jun 2026 - Present", color: "from-blue-500 to-indigo-600" },
+  { icon: Briefcase, label: "Experience", value: "3+ Years IT & Customer Support", sub: "Hollywoodbets & Woolworths", color: "from-orange-500 to-amber-600" },
+  { icon: MapPin, label: "Location", value: "Durban, KwaZulu-Natal", sub: "South Africa • Open to Remote", color: "from-emerald-500 to-teal-600" },
 ];
 
 export default function AboutSection() {
@@ -24,7 +23,7 @@ export default function AboutSection() {
           <p className="font-mono text-sm tracking-widest uppercase text-violet-400 mb-3">About Me</p>
           <h2 className="text-4xl sm:text-5xl font-bold">
             <span className="text-gradient">Software Developer</span>
-            <span className="text-white"> · Full-Stack · Mathematics & Computer Science</span>
+            <span className="text-white"> | IT Support Specialist | Project Management Professional</span>
           </h2>
         </motion.div>
 
@@ -32,10 +31,10 @@ export default function AboutSection() {
           <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}
             transition={{ duration: 0.6 }} className="space-y-5">
             {[
-              "I am a Software Development graduate from Zaio Coding School and a final-semester Applied Mathematics & Computer Science student. My background pairs rigorous analytical thinking with hands-on engineering.",
-              "I build full-stack applications that are clean, performant, and built to last. I've shipped projects using React, Firebase, Node.js, JavaScript, HTML, and CSS, with a sharp focus on user experience and code quality.",
-              "A Cisco Computer Hardware certification deepens my understanding at the system level, giving me a fuller picture of how software and infrastructure interact.",
-              "I thrive in fast-moving teams, pick up new tools quickly, and care deeply about writing code that solves real problems. Open to junior & graduate software developer roles - ready to contribute from day one.",
+              "Highly motivated technology professional with hands-on experience in software development, IT support, project coordination, and compliance operations. Proficient in JavaScript, TypeScript, React, and Node.js, with a strong foundation in Applied Mathematics and Computer Science. Currently in my last semester at UNISA, while gaining real-world project management experience through the Umuzi Project Management Learnership.",
+              "I build full-stack applications that are clean, performant, and built to last. I've shipped projects using React, Firebase, Node.js, JavaScript, TypeScript, HTML5, CSS3, and Tailwind CSS, with a sharp focus on user experience and code quality. My IT support background at Hollywoodbets enhanced my troubleshooting skills and technical problem-solving abilities.",
+              "Proven ability to troubleshoot technical issues, manage stakeholder communication, coordinate cross-functional logistics, and build data-driven financial models. Recent project coordination work includes mapping international travel logistics and creating dual-currency budget forecasts for the Black Pen NPO Project.",
+              "I thrive in fast-moving teams, pick up new tools quickly, and care deeply about writing code that solves real problems. Seeking opportunities in Software Development, IT Support, Graduate Technology Programmes, and Project Management - ready to contribute from day one.",
             ].map((text, i) => (
               <p key={i} className="text-white/60 leading-relaxed text-base">{text}</p>
             ))}

@@ -1,17 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Github, Linkedin, Globe, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Globe, Send, FileDown } from "lucide-react";
 
 const contactItems = [
   { icon: Mail, label: "Email", value: "poomeigh503@gmail.com", href: "mailto:poomeigh503@gmail.com", gradient: "from-violet-500 to-purple-600" },
   { icon: Phone, label: "Phone", value: "082 356 2239", href: "tel:0823562239", gradient: "from-cyan-500 to-blue-600" },
-  { icon: MapPin, label: "Location", value: "Wiggins, South Africa", href: null, gradient: "from-pink-500 to-rose-600" },
+  { icon: MapPin, label: "Location", value: "Durban, KwaZulu-Natal, South Africa", href: null, gradient: "from-pink-500 to-rose-600" },
 ];
 
 const socials = [
   { icon: Github, label: "GitHub", href: "https://github.com/Sphile2012/uphumeh", value: "github.com/Sphile2012", gradient: "from-gray-600 to-gray-800" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/phunyezwa-mjoli", value: "linkedin.com/in/phunyezwa-mjoli", gradient: "from-blue-600 to-blue-800" },
-  { icon: Globe, label: "Portfolio", href: "https://uphumeh.netlify.app/", value: "uphumeh.netlify.app", gradient: "from-emerald-500 to-teal-600" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/phunyezwa-mjoli-6a1228246", value: "linkedin.com/in/phunyezwa-mjoli", gradient: "from-blue-600 to-blue-800" },
+  { icon: Globe, label: "Portfolio", href: "https://uphumeh.netlify.app/Portfolio", value: "uphumeh.netlify.app", gradient: "from-emerald-500 to-teal-600" },
 ];
 
 export default function ContactSection() {
@@ -79,6 +79,14 @@ export default function ContactSection() {
               className="flex items-center justify-center gap-3 p-5 rounded-2xl bg-gradient-to-r from-violet-500 to-cyan-500 text-white font-semibold hover:opacity-90 transition-all shadow-lg shadow-violet-500/25 hover:shadow-violet-500/40 hover:scale-[1.02] active:scale-95">
               <Send className="w-5 h-5" />
               Send Me an Email
+            </motion.a>
+
+            <motion.a href="/resume.pdf" download target="_blank"
+              initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.5 }}
+              className="flex items-center justify-center gap-3 p-5 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold hover:opacity-90 transition-all shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:scale-[1.02] active:scale-95">
+              <FileDown className="w-5 h-5" />
+              Download Resume
             </motion.a>
           </div>
         </div>

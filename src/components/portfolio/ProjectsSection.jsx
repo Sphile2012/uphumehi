@@ -4,6 +4,22 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
+    title: "Portfolio Website",
+    description: "Responsive portfolio website showcasing projects and technical skills using modern web technologies, deployed on Netlify.",
+    url: "https://uphumeh.netlify.app/",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
+    icon: "💼",
+    tags: ["React", "TypeScript", "Tailwind CSS"],
+  },
+  {
+    title: "Fraud Shield Project",
+    description: "Fraud detection and prevention platform focused on improving user security and fraud awareness with real-time analytics.",
+    url: "https://fraudeducationsystem.netlify.app",
+    image: "https://media.base44.com/images/public/69b953316c6a6f44abed30f4/2e16a7404_generated_b85dd651.png",
+    icon: "🛡️",
+    tags: ["React", "Firebase", "Security"],
+  },
+  {
     title: "Salon Booking System",
     description: "Modern salon management platform with online booking, appointment scheduling, and service management.",
     url: "https://phumeh-interview.netlify.app/",
@@ -19,14 +35,7 @@ const projects = [
     icon: "📷",
     tags: ["React", "Firebase", "Social Media"],
   },
-  {
-    title: "Fraud Education System",
-    description: "Full-stack fraud detection dashboard with real-time analytics, transaction monitoring, and alert management.",
-    url: "https://fraudeducationsystem.netlify.app",
-    image: "https://media.base44.com/images/public/69b953316c6a6f44abed30f4/2e16a7404_generated_b85dd651.png",
-    icon: "🛡️",
-    tags: ["React", "Firebase", "Dashboard"],
-  },
+
   {
     title: "Netflix Clone",
     description: "Streaming platform clone with dynamic content loading, responsive layout, and rich media display.",
