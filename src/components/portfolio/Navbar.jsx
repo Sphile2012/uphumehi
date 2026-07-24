@@ -9,7 +9,6 @@ const navLinks = [
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
-  { label: "Resume", href: "/resume.pdf", download: true },
 ];
 
 export default function Navbar() {
@@ -34,14 +33,9 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a key={link.href} href={link.href}
-              {...(link.download ? { download: true, target: "_blank" } : {})}
-              className={`text-sm font-medium transition-colors duration-300 relative group ${
-                link.download 
-                  ? "px-4 py-2 bg-gradient-to-r from-violet-500 to-purple-600 text-white rounded-lg hover:shadow-lg hover:shadow-violet-500/30" 
-                  : "text-white/70 hover:text-violet-400"
-              }`}>
+              className="text-sm font-medium transition-colors duration-300 relative group text-white/70 hover:text-violet-400">
               {link.label}
-              {!link.download && <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-violet-400 to-purple-500 group-hover:w-full transition-all duration-300" />}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-violet-400 to-purple-500 group-hover:w-full transition-all duration-300" />
             </a>
           ))}
         </div>
@@ -70,16 +64,11 @@ export default function Navbar() {
                 <motion.a 
                   key={link.href} 
                   href={link.href}
-                  {...(link.download ? { download: true, target: "_blank" } : {})}
                   onClick={() => setMobileOpen(false)}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.1 }}
-                  className={`text-base font-medium transition-colors py-3 px-4 rounded-lg border ${
-                    link.download
-                      ? "bg-gradient-to-r from-violet-500 to-purple-600 text-white border-transparent hover:shadow-lg"
-                      : "text-white/80 hover:text-violet-400 hover:bg-violet-500/10 border-transparent hover:border-violet-500/20"
-                  }`}
+                  className="text-base font-medium transition-colors py-3 px-4 rounded-lg border text-white/80 hover:text-violet-400 hover:bg-violet-500/10 border-transparent hover:border-violet-500/20"
                 >
                   {link.label}
                 </motion.a>
