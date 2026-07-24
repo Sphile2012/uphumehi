@@ -3,6 +3,18 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
+    title: "Project Coordinator (Work-Integrated Learning)",
+    company: "Black Pen NPO Project",
+    period: "2026 – Present",
+    location: "Remote",
+    gradient: "from-emerald-500 to-teal-600",
+    highlights: [
+      "Mapped complex multi-border flight paths and visa requirements for a 4-person international delegation under Senior Project Manager mentorship, ensuring accurate logistics and compliance planning",
+      "Built an auditable, dual-currency (ZAR/USD) budget forecast in Excel, verifying all costs against real-time data to support financial decision-making",
+      "Drafted executive-level planning presentations and personalised traveler briefs to mitigate transit risks and support stakeholder readiness",
+    ],
+  },
+  {
     title: "Project Management Learnership",
     company: "Umuzi",
     period: "Jun 2026 – Present",
