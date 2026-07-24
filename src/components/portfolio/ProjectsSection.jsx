@@ -9,7 +9,7 @@ const projects = [
     url: "https://uphumeh.netlify.app/",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
     icon: "💼",
-    tags: ["React", "TypeScript", "Tailwind CSS"],
+    tags: ["React", "Tailwind CSS", "Node.js"],
   },
   {
     title: "Fraud Shield Project",

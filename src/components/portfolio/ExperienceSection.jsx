@@ -35,7 +35,7 @@ const experiences = [
     gradient: "from-cyan-500 to-blue-600",
     highlights: [
       "Enhanced customer satisfaction by 15% through timely technical assistance and support, utilizing Zendesk, Salesforce, and LiveChat",
-      "Utilized troubleshooting techniques, SQL, and CRM software to enhance system efficiency and operational performance, significantly reducing downtime",
+      "Utilized troubleshooting techniques and CRM software to enhance system efficiency and operational performance, significantly reducing downtime",
       "Spearheaded comprehensive compliance verification and documentation audits with Arbutus software, identifying critical gaps and strengthening regulatory adherence",
       "Optimized data management processes through comprehensive tracking and quality control measures, enhancing decision-making efficiency",
       "Streamlined operational processes by leveraging project management software and Lean Six Sigma techniques",

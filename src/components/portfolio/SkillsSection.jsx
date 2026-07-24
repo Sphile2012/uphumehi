@@ -7,22 +7,22 @@ const skillCategories = [
     gradient: "from-violet-500 to-purple-600",
     skills: [
       { name: "JavaScript", level: 85, icon: "https://cdn.simpleicons.org/javascript/F7DF1E" },
-      { name: "TypeScript", level: 80, icon: "https://cdn.simpleicons.org/typescript/3178C6" },
       { name: "React", level: 85, icon: "https://cdn.simpleicons.org/react/61DAFB" },
       { name: "Node.js", level: 75, icon: "https://cdn.simpleicons.org/nodedotjs/339933" },
       { name: "HTML5 & CSS3", level: 90, icon: "https://cdn.simpleicons.org/html5/E34F26" },
       { name: "Tailwind CSS", level: 80, icon: "https://cdn.simpleicons.org/tailwindcss/06B6D4" },
+      { name: "Firebase", level: 80, icon: "https://cdn.simpleicons.org/firebase/FFCA28" },
     ],
   },
   {
     title: "IT Support & Tools",
     gradient: "from-cyan-500 to-blue-600",
     skills: [
-      { name: "Technical Troubleshooting", level: 85, icon: "https://cdn.simpleicons.org/circle/000000" },
+      { name: "Technical Troubleshooting", level: 85, icon: "https://cdn.simpleicons.org/codementor/000000" },
       { name: "Zendesk", level: 80, icon: "https://cdn.simpleicons.org/zendesk/03363D" },
       { name: "Salesforce", level: 80, icon: "https://cdn.simpleicons.org/salesforce/00A1E0" },
-      { name: "SQL", level: 75, icon: "https://cdn.simpleicons.org/mysql/4479A1" },
       { name: "System Optimization", level: 80, icon: "https://cdn.simpleicons.org/microsoft/00A4EF" },
+      { name: "Customer Support", level: 85, icon: "https://cdn.simpleicons.org/helpscout/1292EE" },
     ],
   },
   {
@@ -37,14 +37,14 @@ const skillCategories = [
     ],
   },
   {
-    title: "Backend & Core Skills",
+    title: "Development & Core Skills",
     gradient: "from-emerald-500 to-teal-600",
     skills: [
-      { name: "Firebase", level: 80, icon: "https://cdn.simpleicons.org/firebase/FFCA28" },
       { name: "REST APIs", level: 75, icon: "https://cdn.simpleicons.org/fastapi/009688" },
       { name: "Git & GitHub", level: 85, icon: "https://cdn.simpleicons.org/git/F05032" },
       { name: "Problem Solving", level: 90, icon: "https://cdn.simpleicons.org/leetcode/FFA116" },
-      { name: "Communication", level: 90, icon: "https://cdn.simpleicons.org/intercom/1F8DED" },
+      { name: "Communication", level: 90, icon: "https://cdn.simpleicons.org/googlemeet/00897B" },
+      { name: "Teamwork", level: 90, icon: "https://cdn.simpleicons.org/googlegroups/4285F4" },
     ],
   },
 ];
