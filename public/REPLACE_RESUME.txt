@@ -1,0 +1,11 @@
+IMPORTANT: Replace resume.pdf with your actual CV
+
+Steps:
+1. Save your CV document as PDF named "resume.pdf"
+2. Replace the file at: public/resume.pdf
+3. Commit and push the change
+
+The Resume button in your portfolio navigation and the Download Resume button 
+in the Contact section will download this PDF file.
+
+Current file: Placeholder PDF - needs to be replaced with "Phunyezwa Penelope Mjoli updated cv.pdf"

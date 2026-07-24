@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 import { GraduationCap, Award, Briefcase, MapPin } from "lucide-react";
 
 const stats = [
-  { icon: GraduationCap, label: "Education", value: "BSc Applied Mathematics & Computer Science", sub: "University of South Africa (UNISA) • 2024-2026 (Final Semester)", color: "from-violet-500 to-purple-600" },
-  { icon: GraduationCap, label: "Certificate", value: "Higher Certificate in Mathematical Sciences", sub: "UNISA • NQF Level 5 • 2022", color: "from-violet-500 to-purple-600" },
-  { icon: Award, label: "Certificate", value: "Software Development", sub: "Zaio Coding Institute • 2025-2026", color: "from-cyan-500 to-blue-600" },
-  { icon: Award, label: "Courses", value: "IT Support & Computer Hardware", sub: "Cisco, Alison & Worth Wealthy Me", color: "from-pink-500 to-rose-600" },
-  { icon: Briefcase, label: "Current Role", value: "Project Management Learnership", sub: "Umuzi • Jun 2026 - Present", color: "from-blue-500 to-indigo-600" },
-  { icon: Briefcase, label: "Experience", value: "3+ Years IT & Customer Support", sub: "Hollywoodbets & Woolworths", color: "from-orange-500 to-amber-600" },
-  { icon: MapPin, label: "Location", value: "Durban, KwaZulu-Natal", sub: "South Africa • Open to Remote", color: "from-emerald-500 to-teal-600" },
+  { icon: GraduationCap, label: "Current Study", value: "BSc Applied Mathematics & Computer Science", sub: "University of South Africa (UNISA) • 2024-2026 (Final Semester)", color: "from-violet-500 to-purple-600" },
+  { icon: Award, label: "Certificate", value: "Software Development Certification", sub: "Zaio Coding Institute • 2025-2026", color: "from-cyan-500 to-blue-600" },
+  { icon: GraduationCap, label: "Completed", value: "Higher Certificate Mathematical Sciences", sub: "UNISA • NQF Level 5 • 2022", color: "from-purple-500 to-pink-600" },
+  { icon: Award, label: "Certifications", value: "IT Support & Computer Hardware", sub: "Accenture, Cisco, Alison, Worth Wealthy Me", color: "from-blue-500 to-indigo-600" },
+  { icon: Briefcase, label: "Current Role", value: "Project Management Learnership", sub: "Umuzi • Jun 2026 - Present", color: "from-emerald-500 to-teal-600" },
+  { icon: Briefcase, label: "Experience", value: "3 Years IT & Compliance Support", sub: "Hollywoodbets • Jan 2023 - Jan 2026", color: "from-orange-500 to-amber-600" },
+  { icon: MapPin, label: "Location", value: "Durban, KwaZulu-Natal, South Africa", sub: "Open to Remote & Relocation", color: "from-pink-500 to-rose-600" },
 ];
 
 export default function AboutSection() {
